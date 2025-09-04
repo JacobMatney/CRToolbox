@@ -1,17 +1,16 @@
 # Cerebrovascular-Researchers-Toolbox
 
 ---
-title: "Cerebrovascular Researcher's ToolBox"
-author: "Jacob Matney"
-date: "2025-09-02"
-output: html_document
+Title: "Cerebrovascular Researcher's ToolBox"
+Author: "Jacob Matney"
+Date: "2025-09-02"
 ---
 
 # Introduction
 
-The calculation of critical closing pressure (CrCP) and resistance area product (RAP) has the capability to enhance our understanding of cerebrovascular hemodynamics by estimating vascular activity using a two-component model rather than a single-component model. In doing so, researchers can *estimate* the activity of cerebral vessels at various levels of the vascular tree, as well as *estimate* metabolic and myogenic activity of the brain's vasculature in response to stress, respectively. However, the quantification of these variables requires high data quality, considerable data processing, and careful calculation, of which adds an high burden onto researchers when compared to traditional single-component models (such as cerebrovascular resistance index). Because of this, progress towards utilizing stronger, more physiologically accurate analyses of vascular activity rather than convenient calculations in the brain has been slow.
+The calculation of critical closing pressure (CrCP) and resistance area product (RAP) has the capability to enhance our understanding of cerebrovascular hemodynamics by estimating vascular activity using a two-component model rather than the traditional single-component model of cerebrovascular conductance/resistnace indices. In doing so, researchers can *estimate* the activity of cerebral vessels at various branching of the vascular tree, as well as *estimate* metabolic and myogenic-mediated activity of the brain's vasculature in response to stress, respectively. However, the quantification of these variables requires high data quality, considerable data processing, and careful calculation, of which accumulates to a high burden on researchers when compared to traditional single-component models. Because of this, progress towards utilizing stronger, more physiologically interpretable analyses of vascular activity rather than the traditional convenient calculations has been slow.
 
-This shiny app provided here within is based on mathematical calculations set forth by [R.B Panerai](https://linkinghub.elsevier.com/retrieve/pii/S1350453303000274) and colleagues since 2003. In particular, this application calculates CrCP and RAP utilizing the 2-point mean method as described by [Panerai et al. (2011).](https://iopscience.iop.org/article/10.1088/0967-3334/32/4/007) Calculations within the subcomponent analysis of autoregulation follows those set forth by [Beishon et al. (2018),](http://doi.wiley.com/10.14814/phy2.13803).
+This shiny app provided here within is based on mathematical calculations set forth by [R.B Panerai](https://linkinghub.elsevier.com/retrieve/pii/S1350453303000274) and colleagues since 2003. In particular, this application calculates CrCP and RAP utilizing the 2-point mean method as described by [Panerai et al. (2011).](https://iopscience.iop.org/article/10.1088/0967-3334/32/4/007) Calculations within the subcomponent analysis of autoregulation follows those set forth by [Beishon et al. (2018)](http://doi.wiley.com/10.14814/phy2.13803). Additionally, this program calculates estimated cerebral perfusion pressure (CPP) by adjusting mean arterial pressure for the effects of the hydrostatic column (CPP = MAP - (0.7355 * probe distance (cm)), as well as calculates cerebral pulsatility index for the inputed data. 
 
 # Setting Up R and R Studio
 
