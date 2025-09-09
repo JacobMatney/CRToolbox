@@ -420,8 +420,8 @@ MainFunction_JM = function(x,y,z,a,b,d,e) {
   
   MNSE_Matrix = matrix(, ncol = 3, nrow= 1)
   colnames(MNSE_Matrix) = c("Abs Baseline Score", "Abs Stimuli Score", "Subcomponent Score")
-  MNSE_Matrix[,1] = AbsData_Base_MSNE
-  MNSE_Matrix[,2] = AbsData_MSNE
+  MNSE_Matrix[,1] = Base_Fit
+  MNSE_Matrix[,2] = Stim_Fit
   MNSE_Matrix[,3] = SubComp_MNSE
   
   MNSEdf = as.data.frame(MNSE_Matrix)
